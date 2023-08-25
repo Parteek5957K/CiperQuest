@@ -1,11 +1,13 @@
 body
 {
-    height: 700px;
-    min-height: 100vh;
     background-image: linear-gradient(to right,#3F1D59,#1C2E60);
 }
+
 .head
 {
+    left: 0px;
+    right: 0px;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,12 +20,13 @@ body
 }
 .logo
 {
-    width: 75px;
-    height: 75px;
-    border-radius: 37.5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background-color: black;
     margin-top: 5px;
     margin-left: 5px;
+    margin-right: 5px;
 }
 .butts
 {
@@ -100,11 +103,16 @@ body
   }
 .foot
 {
+    margin: 0px -10px -10px -10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     display: flex;
     flex-direction: row;
     background-color: black;
     color: white;
     height: 200px;
+    width: 150%;
 }
 .part
 {
@@ -115,18 +123,14 @@ body
 }
 .pfp
 {
-    margin: 5px;
-    margin-top: 10px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 10px;
 }
 .name
 {
     margin: 5px;
-    margin-top: 10px;
-}
-.part2
-{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
