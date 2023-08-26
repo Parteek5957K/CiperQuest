@@ -3,18 +3,18 @@ body
     background-image: linear-gradient(to right,#3F1D59,#1C2E60);
     width: 100;
 }
-
 .head
 {
     padding: 3px;
     top: 0px;
-    background-color: linear-gradient(to right,#3F1D59,#1C2E60);;
+    background-image: linear-gradient(to right,#3F1D59,#1C2E60);;
     left: 0px;
     right: 0px;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.3);
     z-index: 1000;
     
 }
