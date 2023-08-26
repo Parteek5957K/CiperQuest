@@ -1,16 +1,22 @@
 body
 {
     background-image: linear-gradient(to right,#3F1D59,#1C2E60);
+    width: 100;
 }
 
 .head
 {
+    padding: 3px;
+    top: 0px;
+    background-color: linear-gradient(to right,#3F1D59,#1C2E60);;
     left: 0px;
     right: 0px;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1000;
+    
 }
 .buts
 {
@@ -111,8 +117,8 @@ body
     flex-direction: row;
     background-color: black;
     color: white;
-    height: 200px;
-    width: 150%;
+    height: 220px;
+    width: 101%;
 }
 .part
 {
@@ -124,13 +130,15 @@ body
 .pfp
 {
     background-color: white;
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
     margin: 10px;
+    margin-left:40px ;
 }
 .name
 {
+    font-size:larger;
     margin: 5px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
