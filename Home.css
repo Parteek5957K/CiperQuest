@@ -70,6 +70,8 @@ body
     cursor: pointer;
 }
 .Tiles{
+    z-index: 100;
+    margin-top:3%;
     display: flex;
     width: 65%;
     padding: 4% 2%;
@@ -111,6 +113,7 @@ body
   }
 .foot
 {
+    
     margin: 0px -10px -10px -10px;
     bottom: 0px;
     left: 0px;
