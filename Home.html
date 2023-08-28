@@ -32,6 +32,70 @@
         </div>
       </div>
 
+	<div class="faq" id="faq">
+	<h1>FAQs</h1>
+	<section class="accordion" id="overview">
+		<h1 class="title"><a href="#overview">Overview</a></h1>
+		<div class="content">
+			<div class="wrapper">
+				<p>
+					This CodePen demonstrates<strong>FAQ sections</strong>,
+					<strong>Table of Contents</strong>, and more.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="accordion" id="how-does-it-work">
+		<h1 class="title"><a href="#how-does-it-work">How does it work?</a></h1>
+		<div class="content">
+			<div class="wrapper">
+				<p>
+					 we could set a
+					<code>max-height</code> and transition the <code>height</code> property
+					to a large value when we expand the section. However,
+					<a href="https://css-tricks.com/using-css-transitions-auto-dimensions/#aa-there-are-two-crucial-downsides-to-this" target="_blank">it may not properly work</a>
+					if the content is larger than the <code>max-height</code>.
+				</p>
+				<p>
+					 the
+					<code>grid-template-rows</code> property from <code>0fr</code> to
+					<code>1fr</code> and the grid item transitions to its content height.
+				</p>
+				<p>
+					I used CSS <code>clip-path</code> and <code>mix-blend-mode</code> to
+					animate the background and text color of the accordion. Each accordion
+					has two pseudo-elements. We know that <code>opacity</code>,
+					<code>clip-path</code> and, <code>visibility</code> are animatable CSS
+					properties. So when the accordion is selected using the
+					<code>:target</code> pseudo-class, we transition the clip-path circle
+					radius to 200% of the
+					<code>::before</code>
+					pseudo-element. When the accordion is not selected, we do the same with
+					the
+					<code>::after</code> but this time with a delay. This creates an
+					illusion as it appears to clip from inside.
+				</p>
+				<p>
+					Since the accordion's title is an anchor element, users can also
+					navigate through the items with their keyboard.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="accordion" id="inspiration">
+		<h1 class="title"><a href="#inspiration">What equipment or software do I need to play the escape room puzzles online?</a></h1>
+		<div class="content">
+			<div class="wrapper">
+				<p>
+					All you need is a computer or tablet with an internet connection and a modern web browser.
+					No additional software or downloads are required.
+				</p>
+			</div>
+		</div>
+	</section>
+</div>
     <div class="foot">
         <div>
             <div class="part">
