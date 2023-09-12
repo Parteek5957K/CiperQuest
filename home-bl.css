@@ -1,3 +1,7 @@
+@font-face {
+	font-family: "gratety-font";
+	src: url(Gratety-ZVD43.ttf);
+}
 body
 {
     background-color: white;
@@ -82,15 +86,32 @@ body
 .Tiles-background
 {
 	object-fit: contain;
-	background-image: url(images/3910000.jpg);
+	background-image: linear-gradient(to left,#3F1D59,#1C2E60);
 	left: 0px;
 	right: 0px;
 	padding: 3px;
 	margin: 0px -8px -8px -8px;
 	width: 101%;
 }
+.tile-name
+{
+	color: white;
+	background-color: black;
+}
+.room-name
+{
+	
+	position: absolute;
+	margin: 10px;
+	margin-top: 500px;
+	bottom: 8px;
+	left: 16px;
+}
+
   .box {
-    background-color: white;
+	position: relative;
+	text-align: center;
+    background-color: black;
     color: white;
     flex: 1;
     overflow: hidden;
@@ -116,10 +137,22 @@ body
     line-height: 2.6;
   }
   
-  .box:hover { flex: 1 1 50%; }
+  .box:hover ,.room-name-style:hover{
+	transition: 0.35s;
+	flex: 1 1 50%; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	
+	}
   .box:hover > img {
     width: 100%;
     height: 100%;
+  }
+  .tile-name
+  {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
   }
 .foot
 {
@@ -358,7 +391,6 @@ main > h1 {
 	background-color: hsl(183, 100%, 93%);
 }
 
-
 .faq
 {	
 	background-color: lightgrey;
@@ -369,4 +401,22 @@ main > h1 {
 }
 h1{
     margin: 1%;
+}
+.link-remove
+{
+	text-decoration: none;
+	color: white;
+}
+.about-logo
+{
+	position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+	margin: 100px;
+    margin: 10px;
+    margin-left:40px ;
+	bottom: 10px;
+	justify-content: right;
+	
 }
